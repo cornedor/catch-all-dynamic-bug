@@ -42,9 +42,9 @@ export const getStaticProps = async ({ params }) => {
   };
 };
 
-const PageA = dynamic(() => import("../components/PageA"));
-const PageB = dynamic(() => import("../components/PageB"));
-const PageC = dynamic(() => import("../components/PageC"));
+const PageA = dynamic(() => import("../components/PageA"), { suspense: true });
+const PageB = dynamic(() => import("../components/PageB"), { suspense: true });
+const PageC = dynamic(() => import("../components/PageC"), { suspense: true });
 
 const Router = ({ pageType }) => {
   switch (pageType) {
