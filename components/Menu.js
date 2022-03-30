@@ -18,6 +18,11 @@ const Menu = () => (
           <a>Page C</a>
         </Link>
       </li>
+      <li>
+        <Link href="/not-dynamic">
+          <a>Not Dynamic</a>
+        </Link>
+      </li>
     </ul>
   </div>
 );
